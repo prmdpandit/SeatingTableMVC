@@ -1,0 +1,28 @@
+﻿@model SeatingTableMvc.Web.Models.SeatTableViewViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<h2>  @Html.ActionLink("Table Assign To Person", "TableAssigntoPerson")</h2>
+<table>
+   
+        
+   <tr>
+       <th>Person List</th>
+       <th>Table List</th>
+       <th>Assign Table List</th>
+   </tr>
+    <tr>
+        <td>@Html.Partial("AllPersonList", Model.personList)</td>
+        <td>@Html.Partial("AllTables", Model.tableList)</td>
+        <td>@Html.Partial("AssignToTable", Model.joinatlist)</td>
+    </tr>
+</table>
+      
+     
+ 
+

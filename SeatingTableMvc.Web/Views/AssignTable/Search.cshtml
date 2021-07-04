@@ -1,0 +1,90 @@
+﻿@model IEnumerable<SeatingTableMvc.Web.Models.joinATlist>
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<p>Search by Gender</p>
+<p>Search by Age</p>
+<p><input type="button" value="Search"> </p>
+<table>
+    <tr>
+       <th>
+            TableId
+        </th>
+        <th>
+          TableNum
+        </th>
+        <th>
+            Title
+        </th>
+        <th>
+           NumberOfSeats
+        </th>
+        <th>
+           PersonId
+        </th>
+         <th>
+           PersonId
+        </th>
+        <th>
+           FirstName
+        </th>
+        <th>
+           Lastname
+        </th>
+        <th>
+          Gender
+        </th>
+        <th>
+         Age
+        </th>
+        <th> ReqNoOfSheat</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.table.TableId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table.TableNum)
+        </td>
+       <td>
+            @Html.DisplayFor(modelItem => item.table.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table.NumberOfSeats)
+        </td>
+        <td>
+             @Html.DisplayFor(modelItem => item.table.PersonId)
+        </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.person.PersonId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.person.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.person.Lastname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.person.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.person.Age)
+        </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.person.ReqNoOfSheat)
+        </td>
+    </tr>
+}
+
+</table>

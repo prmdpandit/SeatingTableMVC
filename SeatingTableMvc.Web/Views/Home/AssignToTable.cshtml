@@ -1,0 +1,29 @@
+﻿@model List<SeatingTableMvc.Web.Models.joinATlist>
+
+
+<table>
+    <tr>
+        <th>
+           first name
+        </th>
+        <th>
+            tabel no
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.person.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.table.TableNum)
+        </td>
+        <td>
+            
+        </td>
+    </tr>
+}
+
+</table>

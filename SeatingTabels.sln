@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeatingTableMvc.Web", "SeatingTableMvc.Web\SeatingTableMvc.Web.csproj", "{2EA6186B-CBC2-4C34-ADB9-2D9A2DD3C369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeatingTabels.Models", "SeatingTabels.Models\SeatingTabels.Models.csproj", "{0F0DD528-60A7-4C1F-BE22-E9F098CCCCC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeatingTabels.BAL", "SeatingTabels.BAL\SeatingTabels.BAL.csproj", "{8B50AFD5-118B-4291-AF2F-3DFD0826B0DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seating.Data", "Seating.Data\Seating.Data.csproj", "{8ACF718A-0F75-4042-A9A3-5D8FCE9CADFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EA6186B-CBC2-4C34-ADB9-2D9A2DD3C369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA6186B-CBC2-4C34-ADB9-2D9A2DD3C369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA6186B-CBC2-4C34-ADB9-2D9A2DD3C369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA6186B-CBC2-4C34-ADB9-2D9A2DD3C369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0DD528-60A7-4C1F-BE22-E9F098CCCCC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0DD528-60A7-4C1F-BE22-E9F098CCCCC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0DD528-60A7-4C1F-BE22-E9F098CCCCC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0DD528-60A7-4C1F-BE22-E9F098CCCCC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B50AFD5-118B-4291-AF2F-3DFD0826B0DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B50AFD5-118B-4291-AF2F-3DFD0826B0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B50AFD5-118B-4291-AF2F-3DFD0826B0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B50AFD5-118B-4291-AF2F-3DFD0826B0DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACF718A-0F75-4042-A9A3-5D8FCE9CADFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACF718A-0F75-4042-A9A3-5D8FCE9CADFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACF718A-0F75-4042-A9A3-5D8FCE9CADFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACF718A-0F75-4042-A9A3-5D8FCE9CADFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

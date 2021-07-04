@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SeatingDBModelStoreContainer" CdmEntityContainer="SeatingDBEntities">
+    <EntitySetMapping Name="AssignTableToPersons">
+      <EntityTypeMapping TypeName="SeatingDBModel.AssignTableToPerson">
+        <MappingFragment StoreEntitySet="AssignTableToPerson">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TableId" ColumnName="TableId" />
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="SeatingDBModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="ReqNoOfSheat" ColumnName="ReqNoOfSheat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="SeatingDBModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="TableId" ColumnName="TableId" />
+          <ScalarProperty Name="TableNum" ColumnName="TableNum" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="NumberOfSeats" ColumnName="NumberOfSeats" />
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,56 @@
+﻿@model SeatingTabels.Models.TableVM
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>TableVM</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TableId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TableId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TableNum)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TableNum)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NumberOfSeats)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumberOfSeats)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PersonId)
+    </div>
+    <div class="display-field">
+        @*@Html.DropDownListFor(model => model.PersonId, new SelectList(ViewBag.Listofperson, "PersonId", "FirstName"))*@
+        @Html.DisplayFor(model => model.PersonId)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

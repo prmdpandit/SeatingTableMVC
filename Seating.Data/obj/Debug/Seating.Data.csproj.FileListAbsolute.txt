@@ -1,0 +1,12 @@
+E:\Code practice\SeatingTabels\Seating.Data\bin\Debug\SeatingDB.mdf
+E:\Code practice\SeatingTabels\Seating.Data\bin\Debug\SeatingDB_log.LDF
+E:\Code practice\SeatingTabels\Seating.Data\bin\Debug\Seating.Data.dll.config
+E:\Code practice\SeatingTabels\Seating.Data\bin\Debug\Seating.Data.dll
+E:\Code practice\SeatingTabels\Seating.Data\bin\Debug\Seating.Data.pdb
+E:\Code practice\SeatingTabels\Seating.Data\bin\Debug\EntityFramework.dll
+E:\Code practice\SeatingTabels\Seating.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Code practice\SeatingTabels\Seating.Data\bin\Debug\EntityFramework.xml
+E:\Code practice\SeatingTabels\Seating.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Code practice\SeatingTabels\Seating.Data\obj\Debug\Seating.Data.dll
+E:\Code practice\SeatingTabels\Seating.Data\obj\Debug\Seating.Data.pdb
+E:\Code practice\SeatingTabels\Seating.Data\obj\Debug\Seating.Data.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+E:\Code practice\SeatingTabels\SeatingTabels.Models\bin\Debug\SeatingTabels.Models.dll
+E:\Code practice\SeatingTabels\SeatingTabels.Models\bin\Debug\SeatingTabels.Models.pdb
+E:\Code practice\SeatingTabels\SeatingTabels.Models\obj\Debug\SeatingTabels.Models.dll
+E:\Code practice\SeatingTabels\SeatingTabels.Models\obj\Debug\SeatingTabels.Models.pdb

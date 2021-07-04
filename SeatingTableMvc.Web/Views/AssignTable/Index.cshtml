@@ -1,0 +1,71 @@
+﻿@model IEnumerable<SeatingTabels.Models.TableVM>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Search Filter", "Search")
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TableId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TableNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberOfSeats)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PersonId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TableId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TableNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfSeats)
+        </td>
+        <td>
+            @*@Html.DropDownList("PersonId", new SelectList(ViewBag.Listofperson),"Select Person")*@
+             @Html.DropDownListFor(modelItem => item.PersonId, new SelectList(ViewBag.Listofperson, "PersonId", "FirstName",item.PersonId),"Non")
+            @*@Html.DisplayFor(modelItem => item.PersonId)*@
+        </td>
+        <td>
+            @{
+                if(item.PersonId==null)
+            {
+            @Html.ActionLink("Assign", "Edit", new { id=item.TableId  }) 
+                                                                         }
+            
+            else  
+            {
+            @Html.ActionLink("Remove", "Delete", new {  id=item.TableId })
+            }
+            }
+            
+            
+        </td>
+    </tr>
+}
+
+</table>

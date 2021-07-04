@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SeatingDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="SeatingDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AssignTableToPersons" EntityType="SeatingDBModel.AssignTableToPerson" />
+    <EntitySet Name="People" EntityType="SeatingDBModel.Person" />
+    <EntitySet Name="Tables" EntityType="SeatingDBModel.Table" />
+  </EntityContainer>
+  <EntityType Name="AssignTableToPerson">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TableId" Type="Int64" Nullable="false" />
+    <Property Name="PersonId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="PersonId" />
+    </Key>
+    <Property Name="PersonId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="256" Unicode="false" FixedLength="false" />
+    <Property Name="Lastname" Type="String" Nullable="false" MaxLength="256" Unicode="false" FixedLength="false" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <Property Name="ReqNoOfSheat" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="TableId" />
+    </Key>
+    <Property Name="TableId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TableNum" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="NumberOfSeats" Type="Int32" Nullable="false" />
+    <Property Name="PersonId" Type="Int64" />
+  </EntityType>
+</Schema>

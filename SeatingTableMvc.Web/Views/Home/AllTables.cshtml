@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SeatingTabels.Models.TableVM>
+
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TableId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TableNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberOfSeats)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TableId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TableNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfSeats)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

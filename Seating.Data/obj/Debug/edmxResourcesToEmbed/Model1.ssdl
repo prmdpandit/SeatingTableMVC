@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SeatingDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SeatingDBModelStoreContainer">
+    <EntitySet Name="AssignTableToPerson" EntityType="SeatingDBModel.Store.AssignTableToPerson" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Person" EntityType="SeatingDBModel.Store.Person" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Table" EntityType="SeatingDBModel.Store.Table" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="AssignTableToPerson">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TableId" Type="bigint" Nullable="false" />
+    <Property Name="PersonId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="PersonId" />
+    </Key>
+    <Property Name="PersonId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="256" />
+    <Property Name="Lastname" Type="varchar" Nullable="false" MaxLength="256" />
+    <Property Name="Gender" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="ReqNoOfSheat" Type="int" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="TableId" />
+    </Key>
+    <Property Name="TableId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TableNum" Type="int" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" />
+    <Property Name="NumberOfSeats" Type="int" Nullable="false" />
+    <Property Name="PersonId" Type="bigint" />
+  </EntityType>
+</Schema>
